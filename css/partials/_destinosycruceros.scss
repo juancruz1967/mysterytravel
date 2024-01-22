@@ -1,0 +1,75 @@
+.destinos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+    align-items: center;
+    justify-items: center;
+    list-style-type: none;
+    gap: 0.5rem;
+    row-gap: 3rem;
+    padding: 0.5rem;
+}
+
+
+.card{
+    img{
+        height: 12rem;
+        width: 100%;
+        transition: 0.5s;
+        object-fit: cover;
+    }
+    img:hover{
+            transform: scale(1.05);
+        }
+
+}
+
+
+
+.cruises-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    list-style-type: none;
+    .titulo-carta-cruceros{
+        font-weight: 700;
+        justify-content: start;
+        }
+    .logo-cruises {
+        height: 2rem;
+        width: 2rem;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        float: none;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white !important;
+    }
+}
+
+.comentario-cruises{
+    text-align: center;
+    color: #E9D985;
+    font-size: xx-large;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    box-sizing: border-box;
+    justify-content: center;
+    .h3{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200    ;
+        font-style: normal;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+}

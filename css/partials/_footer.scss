@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+
+    .p{
+        margin-top: 4rem;
+    }
+}
