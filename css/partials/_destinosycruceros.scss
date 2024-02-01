@@ -11,11 +11,12 @@
 
 
 .card{
+    overflow: hidden;
     img{
         height: 12rem;
         width: 100%;
         transition: 0.5s;
-        object-fit: cover;
+        object-fit: cover;     
     }
     img:hover{
             transform: scale(1.05);

@@ -1,11 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Inicio estilos sitio completo */
+header {
+  position: sticky;
+  top: 1rem;
+  z-index: 99 !important;
+}
+header nav {
+  border-radius: 10px;
+  padding: 10rem;
+  margin: 1rem;
+}
+
 body {
   background-image: url(../img/backround.jpg);
   font-family: "Open Sans", sans-serif;
@@ -58,37 +67,62 @@ body {
   padding: 1rem;
 }
 
-/* Inicio estilos Header */
-header {
-  position: sticky;
-  top: 1rem;
-  z-index: 99 !important;
+.promociones-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: 4rem;
+  list-style-type: none;
 }
-header nav {
-  border-radius: 10px;
-  padding: 10rem;
+
+.card-promociones {
+  padding: 3rem;
+  width: 100%;
+}
+
+.titulo-carta-promociones {
+  font-weight: 800;
+  text-align: center;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+}
+
+form {
+  padding: 10px;
   margin: 1rem;
 }
 
-/* Fin estilos Header */
-footer {
-  display: flex;
-  flex-direction: row;
-  height: 3rem;
-  justify-content: center;
-  align-items: center;
+li {
+  margin-right: 20px;
+}
+
+h6 {
+  text-align: justify;
+  margin: 1rem 2rem;
+}
+
+.comentario-contacto {
+  margin-bottom: 10px;
+  text-align: left;
+  border: floralwhite;
+  border-top: 10px;
+  padding: 1rem;
+  background-color: rgb(0, 121, 155);
+}
+
+.ventajas {
   margin: 1rem;
   padding: 1rem;
 }
-footer .p {
-  margin-top: 4rem;
-}
 
-/* Fin estilos sitio completo */
-/* -------------------------- */
-/* -------------------------- */
-/* -------------------------- */
-/* Inicio estilos Destinos y Cruceros*/
 .destinos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
@@ -100,6 +134,9 @@ footer .p {
   padding: 0.5rem;
 }
 
+.card {
+  overflow: hidden;
+}
 .card img {
   height: 12rem;
   width: 100%;
@@ -160,60 +197,15 @@ footer .p {
   justify-content: center;
 }
 
-/* Fin estilos Destinos y Cruceros */
-/* -------------------------- */
-.carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-}
-
-form {
-  padding: 10px;
-  margin: 1rem;
-}
-
-li {
-  margin-right: 20px;
-}
-
-h6 {
-  text-align: justify;
-  margin: 1rem 2rem;
-}
-
-.comentario-contacto {
-  margin-bottom: 10px;
-  text-align: left;
-  border: floralwhite;
-  border-top: 10px;
-  padding: 1rem;
-  background-color: rgb(0, 121, 155);
-}
-
-.ventajas {
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.promociones-list {
+footer {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  height: 3rem;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  margin: 1rem;
   padding: 1rem;
+}
+footer .p {
   margin-top: 4rem;
-  list-style-type: none;
-}
-
-.card-promociones {
-  padding: 3rem;
-  width: 100%;
-}
-
-.titulo-carta-promociones {
-  font-weight: 800;
-  text-align: center;
 }/*# sourceMappingURL=main.css.map */
